@@ -1,8 +1,8 @@
 import asyncio
-import pygame
 import keyboard
 
-from constant import *
+from SFX import *
+from config import *
 
 def main():
     print("Welcome to Keyboard Gun!")
@@ -10,6 +10,7 @@ def main():
         event = keyboard.read_event()
         if event.event_type == keyboard.KEY_DOWN:
             print(f"You pressed: {event.name}")
+            short_gun_shot()
     print("Exiting the game. Goodbye!")
 
-main()
+main() 
