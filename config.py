@@ -1,10 +1,10 @@
-SHOTGUN_AMMO = 8
-RIFLE_AMMO = 30
-PISTOL_AMMO = 15
-DESERT_EAGLE_AMMO = 7
-REVOLVER_AMMO = 6
-SNIPER_AMMO = 5
-AUTO_SHORTGUN_AMMO = 12
-SEMIAUTO_RIFLE_AMMO = 20
+shotgun_ammo = 8
+rifle_ammo = 30
+pistol_ammo = 15
+desert_eagle_ammo = 7
+revolver_ammo = 6
+sniper_ammo = 5
+auto_shortgun_ammo = 12
+semiauto_rifle_ammo = 20
 
-volume = 0.5
+volume = 0.2

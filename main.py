@@ -11,6 +11,7 @@ def main():
         if event.event_type == keyboard.KEY_DOWN:
             print(f"You pressed: {event.name}")
             short_gun_shot()
+            
     print("Exiting the game. Goodbye!")
 
 main() 
