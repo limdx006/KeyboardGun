@@ -1,7 +1,7 @@
 import asyncio
 import keyboard
 
-from SFX import *
+from shot import *
 from config import *
 
 current_gun = "shotgun"
