@@ -8,6 +8,14 @@ from config import *
 
 pygame.mixer.init()
 
+def gun_shot(gun_type):
+    match gun_type:
+        case "shotgun":
+            short_gun_shot()
+        case _:
+            print(f"Unknown gun type: {gun_type}")
+
+
 def short_gun_shot():
     global shotgun_ammo
     if keyboard.is_pressed('space'):
