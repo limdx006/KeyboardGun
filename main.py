@@ -5,7 +5,6 @@ from SFX import *
 from config import *
 
 current_gun = "shotgun"
-infinite_ammo = False
 
 def main():
     print("Welcome to Keyboard Gun!")
@@ -14,7 +13,8 @@ def main():
         event = keyboard.read_event()
         if event.event_type == keyboard.KEY_DOWN:
             print(f"You pressed: {event.name}")
-            gun_shot(current_gun)
+            if len(event.name) == 1 and event.name.isalnum() or event.name == "space":  # Check if the key is a single character or space
+                gun_shot(current_gun)
     print("Exiting the game. Goodbye!")
 
 main()

@@ -4,7 +4,7 @@ import pygame
 import keyboard
 
 from config import *
-
+infinite_ammo = False
 
 pygame.mixer.init()
 
@@ -27,7 +27,8 @@ def short_gun_shot():
         sound = pygame.mixer.Sound("assests/SFX/ShortGunPull.wav")
         sound.set_volume(volume)
         sound.play()
-        shotgun_ammo -= 1
+        if not infinite_ammo:
+            shotgun_ammo -= 1
         print(f"Shotgun ammo: {shotgun_ammo}")
     else:
         sound = pygame.mixer.Sound("assests/SFX/Empty/EmptyShotgunClick.wav")
